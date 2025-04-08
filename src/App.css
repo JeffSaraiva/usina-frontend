@@ -1,38 +1,46 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f5f7;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
   text-align: center;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.usinas-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.usinas-table thead {
+  background-color: #4a90e2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.usinas-table th,
+.usinas-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.usinas-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.usinas-table tbody tr:hover {
+  background-color: #eef6ff;
 }
